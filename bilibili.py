@@ -71,7 +71,7 @@ def askurl(url):
 def savedata(datalist,path):
     print('savedata')
     film = xlwt.Workbook(encoding='utf-8',style_compression=0)
-    sheet = film.add_sheet('bilibil每周必看',cell_overwrite_ok=True)
+    sheet = film.add_sheet('bilibil排行榜',cell_overwrite_ok=True)
     col = ("视频标题","UP主","播放量","弹幕数量","视频链接")
     for i in range(0,5):
         sheet.write(0,i,col[i])
